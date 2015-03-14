@@ -1,3 +1,5 @@
 *~
 www/debian/pool
 www/debian/dists
+logs
+db
