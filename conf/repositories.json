@@ -1,0 +1,42 @@
+[{
+    "name": "debian-jessie",
+    "type": "mirror",
+    "url": "http://http.debian.net/debian",
+    "keyring": "conf/gpg.d/debian-archive-keyring.gpg",
+    "components": ["main", "contrib", "non-free"],
+    "source": true
+}, {
+    "name": "geogebra",
+    "type": "mirror",
+    "url": "http://www.geogebra.net/linux",
+    "keyring": "conf/gpg.d/geogebra.gpg",
+    "components": ["main"],
+    "source": false
+}, {
+    "name": "dos-unstable",
+    "type": "repo",
+    "components": ["main", "contrib", "non-free"],
+    "source": true,
+    "migrations": [{
+        "from": "debian-jessie",
+        "automatic": true
+    }]
+}, {
+    "name": "dos-testing",
+    "type": "repo",
+    "components": ["main", "contrib", "non-free"],
+    "source": true,
+    "migrations": [{
+        "from": "digabi-unstable",
+        "automatic": false
+    }]
+}, {
+    "name": "dos-stable",
+    "type": "repo",
+    "components": ["main", "contrib", "non-free"],
+    "source": true,
+    "migrations": [{
+        "from": "digabi-testing",
+        "automatic": false
+    }]
+}]

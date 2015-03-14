@@ -1,0 +1,21 @@
+Origin: ypcs-stable
+Label: ypcs repository
+Codename: jessie
+Suite: stable
+Architectures: i386 amd64 source
+Components: main contrib non-free
+Description: Custom APT repository
+Contents: percomponent
+Log: repository_jessie.log
+SignWith: 0x204742DA
+
+Origin: ypcs-unstable
+Label: ypcs repository
+Codename: sid
+Suite: unstable
+Architectures: i386 amd64 source
+Components: main contrib non-free
+Description: Custom APT repository
+Contents: percomponent
+Log: repository_sid.log
+SignWith: 0x204742DA
