@@ -1,0 +1,10 @@
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+
+Package: spotify
+Maintainer: Ville Korhonen <ville@xd.fi>
+Version: 1.0
+Depends: spotify-client, libgcrypt11
+Description: Install Spotify & missing dependencies
+ Fixes missing dependencies when installing Spotify.
