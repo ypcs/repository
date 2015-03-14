@@ -2,13 +2,14 @@ Section: misc
 Priority: optional
 Standards-Version: 3.9.2
 
-Package: ypcs-base-system
+Package: ypcs-base-system-extras
 Maintainer: Ville Korhonen <ville@xd.fi>
-Version: 1.0.2
-Depends: etckeeper, ufw, vim, vim-scripts, apt-transport-https,
- dnssec-trigger, ypcs-u2f, bash-completion, unzip, zip, p7zip-full
+Version: 1.0
+Depends: ypcs-base-system, virtualbox, virtualbox-dkms, vagrant,
+ python-pip, python-virtualenv, virtualenvwrapper, ncdu, nmap, opensc,
+ pcscd, pwgen, s3cmd
 #Recommends:
-Suggests: openvpn
+#Suggests:
 Architecture: all
 Description: Installs essential tools for new system.
  Installs essential packages.

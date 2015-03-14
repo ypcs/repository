@@ -2,12 +2,10 @@ Section: misc
 Priority: optional
 Standards-Version: 3.9.2
 
-Package: ypcs-base-system-gui
+Package: ypcs-base-system-gui-extras
 Maintainer: Ville Korhonen <ville@xd.fi>
 Version: 1.0
-Depends: ypcs-base-system, chromium, xtrlock, vlc, transmission-gtk,
- pavucontrol, scribus, inkscape, gimp, fonts-inconsolata, fonts-lato,
- pepperflashplugin-nonfree
+Depends: ypcs-base-system-gui, virtualbox-qt, wireshark
 #Recommends:
 #Suggests:
 Architecture: all
