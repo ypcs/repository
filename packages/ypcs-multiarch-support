@@ -5,7 +5,7 @@ Standards-Version: 3.9.2
 
 Package: ypcs-multiarch-support
 Maintainer: Ville Korhonen <ville@xd.fi>
-Version: 1.0
+Version: 1.0.0
 Architecture: amd64
 Description: Enable support for i386 packages on amd64 system. 
  Enable support for i386 packages on amd64 system.

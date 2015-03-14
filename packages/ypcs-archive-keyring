@@ -5,7 +5,7 @@ Standards-Version: 3.9.2
 
 Package: ypcs-archive-keyring
 Maintainer: Ville Korhonen <ville@xd.fi>
-Version: 1.0
+Version: 1.0.1
 Architecture: all
 Files: ypcs.gpg /etc/apt/trusted.gpg.d
 Description: Archive keyring for ypcs repository

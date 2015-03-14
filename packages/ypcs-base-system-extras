@@ -4,7 +4,7 @@ Standards-Version: 3.9.2
 
 Package: ypcs-base-system-extras
 Maintainer: Ville Korhonen <ville@xd.fi>
-Version: 1.0
+Version: 1.0.1
 Depends: ypcs-base-system, virtualbox, virtualbox-dkms, vagrant,
  python-pip, python-virtualenv, virtualenvwrapper, ncdu, nmap, opensc,
  pcscd, pwgen, s3cmd
