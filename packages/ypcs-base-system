@@ -4,9 +4,9 @@ Standards-Version: 3.9.2
 
 Package: ypcs-base-system
 Maintainer: Ville Korhonen <ville@xd.fi>
-Version: 1.0.1
+Version: 1.0.2
 Depends: etckeeper, ufw, vim, vim-scripts, apt-transport-https,
- dnssec-trigger, ypcs-u2f
+ dnssec-trigger, ypcs-u2f, bash-completion
 #Recommends:
 Suggests: openvpn
 Architecture: all
