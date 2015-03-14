@@ -1,0 +1,14 @@
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+
+Package: ypcs-base-system-gui
+Maintainer: Ville Korhonen <ville@xd.fi>
+Version: 1.0
+Depends: ypcs-base-system, chromium, xtrlock, vlc, transmission-gtk,
+ pavucontrol, scribus, inkscape, gimp, fonts-inconsolata, fonts-lato
+#Recommends:
+#Suggests:
+Architecture: all
+Description: Installs essential tools for new system.
+ Installs essential packages for GUI usage.
