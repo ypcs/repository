@@ -5,3 +5,4 @@ logs
 db
 install.sh.sha256
 install.sh.sha256.asc
+*.deb
