@@ -269,8 +269,9 @@ sXjS9qpCdO4R/dY=
 =oLvG
 -----END PGP PUBLIC KEY BLOCK-----
 EOF
-
-cp ${TEMPFILE} /etc/apt/trusted.gpg.d/ypcs.gpg
+apt-key add ${TEMPFILE}
+rm -f ${TEMPFILE}
+#cp ${TEMPFILE} /etc/apt/trusted.gpg.d/ypcs.gpg
 
 apt-get -y install apt-transport-https
 
