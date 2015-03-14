@@ -9,6 +9,9 @@ S3PREFIX="repos/"
 
 TARGET="s3://${S3BUCKET}/${S3PREFIX}${REPONAME}"
 
+echo "I: Sign install.sh..."
+gpg -a --sign install.sh
+
 echo "I: Sync config, tools..."
 ${S3CMD} sync install.sh ${TARGET}/
 ${S3CMD} sync install.sh.asc ${TARGET}/
