@@ -1,0 +1,12 @@
+Section: misc
+Priority: optional
+Homepage: http://ypcs.fi/repository/
+Standards-Version: 3.9.2
+
+Package: ypcs-archive-keyring
+Maintainer: Ville Korhonen <ville@xd.fi>
+Version: 1.0
+Architecture: all
+Files: ypcs.gpg /etc/apt/trusted.gpg.d
+Description: Archive keyring for ypcs repository
+ Installs GPG key for APT.
