@@ -1,0 +1,16 @@
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+
+Package: ypcs-u2f
+Maintainer: Ville Korhonen <ville@xd.fi>
+Version: 1.0
+Files: 70-u2f.rules /etc/udev/rules.d
+Recommends: chromium
+Architecture: all
+Description: Install udev rules for U2F tokens.
+ Install udev rules for setting permissions for U2F (Universal 2nd 
+ Factor) devices, namely Yubico Yubikeys.
+File: postinst
+ #!/bin/sh
+ udevadm control -R
