@@ -9,12 +9,9 @@ S3PREFIX="repos/"
 
 TARGET="s3://${S3BUCKET}/${S3PREFIX}${REPONAME}"
 
-if [[ ! -f install.sh.sha256 || ! -f install.sh.sha256.asc ]]
-then
-    echo "I: Sign install.sh..."
-    sha256sum install.sh |tee install.sh.sha256
-    gpg -a --sign install.sh.sha256
-fi
+echo "I: Sign install.sh..."
+sha256sum install.sh |tee install.sh.sha256
+gpg -a --sign install.sh.sha256
 
 echo "I: Sync config, tools..."
 ${S3CMD} sync install.sh ${TARGET}/
