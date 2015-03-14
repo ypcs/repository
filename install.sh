@@ -277,7 +277,7 @@ apt-get -y install apt-transport-https
 
 cat > /etc/apt/sources.list.d/ypcs.list << EOF
 deb https://cdn.ypcs.fi/repos/ypcs ${DIST} main contrib non-free
-deb-src https://cdn.ypcs.fi/repos/ypcs ${DIST} main contrib non-free
+#deb-src https://cdn.ypcs.fi/repos/ypcs ${DIST} main contrib non-free
 EOF
 
 apt-get update
