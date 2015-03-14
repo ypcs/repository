@@ -1,0 +1,13 @@
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+
+Package: ypcs-base-system
+Maintainer: Ville Korhonen <ville@xd.fi>
+Version: 1.0
+Depends: etckeeper ufw vim vim-scripts
+# Recommends: <comma-separated list of packages>
+# Suggests: <comma-separated list of packages>
+Architecture: all
+Description: Installs essential tools for new system.
+ Installs essential packages.
