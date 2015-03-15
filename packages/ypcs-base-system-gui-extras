@@ -4,10 +4,10 @@ Standards-Version: 3.9.2
 
 Package: ypcs-base-system-gui-extras
 Maintainer: Ville Korhonen <ville@xd.fi>
-Version: 1.0.0
-Depends: ypcs-base-system-gui, virtualbox-qt, wireshark
+Version: 1.0.1
+Depends: ypcs-base-system-gui, wireshark
 #Recommends:
-#Suggests:
+Suggests: virtualbox-qt
 Architecture: all
 Description: Installs essential tools for new system.
  Installs essential packages for GUI usage.

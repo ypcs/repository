@@ -4,12 +4,12 @@ Standards-Version: 3.9.2
 
 Package: ypcs-base-system-extras
 Maintainer: Ville Korhonen <ville@xd.fi>
-Version: 1.0.1
-Depends: ypcs-base-system, virtualbox, virtualbox-dkms, vagrant,
+Version: 1.0.2
+Depends: ypcs-base-system, vagrant,
  python-pip, python-virtualenv, virtualenvwrapper, ncdu, nmap, opensc,
  pcscd, pwgen, s3cmd
 #Recommends:
-#Suggests:
+Suggests: virtualbox, virtualbox-dkms, qemu-kvm, libvirt-bin
 Architecture: all
 Description: Installs essential tools for new system.
  Installs essential packages.
