@@ -4,11 +4,11 @@ Standards-Version: 3.9.2
 
 Package: ypcs-base-system
 Maintainer: Ville Korhonen <ville@xd.fi>
-Version: 1.0.3
+Version: 1.0.4
 Depends: etckeeper, ufw, vim, vim-scripts, apt-transport-https,
- dnssec-trigger, ypcs-u2f, bash-completion, unzip, zip, p7zip-full
+ ypcs-u2f, bash-completion, unzip, zip, p7zip-full
 #Recommends:
-Suggests: openvpn
+Suggests: openvpn, dnssec-trigger
 Architecture: all
 Description: Installs essential tools for new system.
  Installs essential packages.
