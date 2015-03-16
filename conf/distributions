@@ -19,3 +19,13 @@ Description: Custom APT repository
 Contents: percomponent
 Log: repository_sid.log
 SignWith: 0x204742DA
+
+Origin: ypcs-misc
+Label: ypcs repository
+Codename: norppa
+Architectures: i386 amd64 source
+Components: main contrib non-free
+Description: Custom APT repository
+Contents: percomponent
+Log: repository_norppa.log
+SignWith: 0x204742DA
