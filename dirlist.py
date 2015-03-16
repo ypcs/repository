@@ -56,7 +56,9 @@ def main(args):
         for f in files:
             if f == 'index.html' or f.startswith('.'):
                 continue
-            content += '<li class="file"><a href="%s">%s</a></li>' % (f, f)
+            fs = os.path.getsize(os.path.join(root, f))
+            
+            content += '<li class="file"><a href="%s">%s</a> (%d bytes)</li>' % (f, f, fs)
         
         src = TEMPLATE % {
             'dir': os.path.basename(root),
