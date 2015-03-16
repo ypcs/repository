@@ -43,6 +43,6 @@ sync-pool:
 	cd www/debian && $(SYNC) pool $(TARGET)/
 
 sync-dists:
-	cd www/debian && $(SYNC) --cf-invalidate dists $(TARGET)/
+	cd www/debian && $(SYNC) dists $(TARGET)/
 
 sync: clean $(DOCROOT)/index.html sync-misc sync-db sync-pool sync-dists
