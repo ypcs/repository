@@ -44,5 +44,6 @@ sync-pool:
 
 sync-dists:
 	cd www/debian && $(SYNC) dists $(TARGET)/
+	$(S3CMD) --recursive modify --add-header="Cache-Control: max-age=300" $(TARGET)/dists/
 
 sync: clean $(DOCROOT)/index.html sync-misc sync-db sync-pool sync-dists
