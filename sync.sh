@@ -19,6 +19,9 @@ ${S3CMD} sync install.sh.sha256 ${TARGET}/
 ${S3CMD} sync install.sh.sha256.asc ${TARGET}/
 ${S3CMD} sync conf ${TARGET}/
 ${S3CMD} sync logs ${TARGET}/
+cd www/debian
+${S3CMD} sync index.html ${TARGET}/ 
+cd ../..
 
 echo "I: Sync reprepro database..."
 ${S3CMD} sync db ${TARGET}/
