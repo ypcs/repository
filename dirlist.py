@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# Author: Ville Korhonen <ville@xd.fi>
+
 import os
 import sys
 
@@ -36,6 +38,7 @@ TEMPLATE = """
 </script>
 </body>
 </html>
+<!-- Generated using https://github.com/ypcs/repository/blob/master/dirlist.py -->
 """
 
 
