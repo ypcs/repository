@@ -32,6 +32,7 @@ sync-misc: $(INSTALL_SCRIPT) $(INSTALL_SCRIPT).$(CHECKSUM) $(INSTALL_SCRIPT).$(C
 	$(SYNC) $(INSTALL_SCRIPT).$(CHECKSUM) $(TARGET)/
 	$(SYNC) $(INSTALL_SCRIPT).$(CHECKSUM).asc $(TARGET)/
 	
+	$(SYNC) logs $(TARGET)/
 	$(SYNC) conf $(TARGET)/
 	cd www/debian && $(SYNC) index.html $(TARGET)/ && cd ../..
 
