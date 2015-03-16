@@ -52,7 +52,7 @@ def main(args):
         outfile = '%s/index.html' % root
         content = ""
         for d in dirs:
-            content += '<li class="dir"><a href="%s">%s</a></li>' % (d, d)
+            content += '<li class="dir"><a href="%s/index.html">%s</a></li>' % (d, d)
         for f in files:
             content += '<li class="file"><a href="%s">%s</a></li>' % (f, f)
         
