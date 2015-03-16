@@ -54,6 +54,8 @@ def main(args):
         for d in dirs:
             content += '<li class="dir"><a href="%s/index.html">%s</a></li>' % (d, d)
         for f in files:
+            if f == 'index.html' or f.startswith('.'):
+                continue
             content += '<li class="file"><a href="%s">%s</a></li>' % (f, f)
         
         src = TEMPLATE % {
