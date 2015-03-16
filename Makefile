@@ -16,7 +16,7 @@ TARGET = s3://$(BUCKET)/$(BUCKET_PREFIX)$(REPONAME)
 all:
 
 clean:
-	find $(DOCROOT)/ -type f -name index.html -exec {} \;
+	find $(DOCROOT)/ -type f -name index.html -exec {} \; 2>/dev/null
 
 $(INSTALL_SCRIPT).$(CHECKSUM): $(INSTALL_SCRIPT)
 	$(CHECKSUM_BIN) $(INSTALL_SCRIPT) |tee $(INSTALL_SCRIPT).$(CHECKSUM)
