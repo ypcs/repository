@@ -1,0 +1,15 @@
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Homepage: https://github.com/prasmussen/gdrive
+Vcs-Git: https://github.com/prasmussen/gdrive.git
+Vcs-Browser: https://github.com/prasmussen/gdrive
+
+Package: gdrive
+Version: 1.6.1
+Maintainer: Ville Korhonen <ville@xd.fi>
+Copyright: MIT
+Architecture: amd64
+Files: drive /usr/bin
+Description: Google Drive client
+ Google Drive client, written in go.
