@@ -8,7 +8,6 @@ Vcs-Browser: https://github.com/prasmussen/gdrive
 Package: gdrive
 Version: 1.6.1
 Maintainer: Ville Korhonen <ville@xd.fi>
-Copyright: MIT
 Architecture: amd64
 Files: drive /usr/bin
 Description: Google Drive client
