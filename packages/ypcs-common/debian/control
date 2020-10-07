@@ -123,3 +123,9 @@ Depends: ${misc:Depends},
  ypcs-common (= ${binary:Version})
 Description: Software for building new packages
  WIP
+
+Package: ypcs-archive-keyring
+Architecture: any
+Depends: ${misc:Depends}
+Description: Archive signing key for ypcs repository
+ Installs signing key used to sign repository package lists.
