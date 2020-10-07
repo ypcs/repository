@@ -1,0 +1,123 @@
+Source: ypcs-common
+Section: misc
+Priority: optional
+Maintainer: Ville Korhonen <ville@xd.fi>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.0
+Homepage: https://ypcs.fi/deb/
+#Vcs-Browser: https://salsa.debian.org/debian/ypcs-common
+Vcs-Git: https://github.com/ypcs/repository
+Rules-Requires-Root: no
+
+Package: ypcs-common
+Architecture: any
+Depends: ${misc:Depends},
+ auditd,
+ curl,
+ etckeeper,
+ fail2ban,
+ git,
+ gnupg,
+ less,
+ make,
+ mosh,
+ ncdu,
+ oathtool,
+ pass,
+ rsync,
+ tmux,
+ unbound,
+ vim,
+ vim-airline,
+ vim-gitgutter,
+ vim-scripts,
+ vim-syntastic,
+ vim-youcompleteme
+Description: Essential tools for new system
+ WIP
+ .
+ This package depends on other packages that provide essential features to new
+ system, independ of the role of the system (server, laptop, workstation).
+
+Package: ypcs-workstation
+Architecture: any
+Depends: ${misc:Depends},
+ pcscd,
+ scdaemon,
+ ypcs-common (= ${binary:Version})
+Description: Tools for a workstation
+ WIP
+
+Package: ypcs-gui
+Architecture: any
+Depends: ${misc:Depends},
+ chromium,
+ firefox-esr,
+ fonts-lato,
+ pavucontrol,
+ webext-browserpass,
+ webext-https-everywhere,
+ webext-lightbeam,
+ webext-noscript,
+ webext-privacy-badger,
+ webext-ublock-origin,
+ webext-ublock-origin-chromium,
+ webext-ublock-origin-firefox,
+ webext-umatrix,
+ ypcs-common (= ${binary:Version}),
+ ypcs-workstation (= ${binary:Version}),
+ yubioath-desktop
+Description: GUI tools
+ WIP
+
+Package: ypcs-sysadmin
+Architecture: any
+Depends: ${misc:Depends},
+ dnsutils,
+ nmap,
+ tshark,
+ whois,
+ ypcs-common (= ${binary:Version})
+Description: Sysadmin tools
+ WIP
+
+Package: ypcs-sysadmin-gui
+Architecture: any
+Depends: ${misc:Depends},
+ wireshark,
+ ypcs-sysadmin (= ${binary:Version}),
+ ypcs-common (= ${binary:Version})
+Description: Sysadmin tools for GUI systems
+ WIP
+
+Package: ypcs-devel
+Architecture: any
+Depends: ${misc:Depends},
+ editorconfig,
+ entr,
+ flake8,
+ git-svn,
+ pyflakes3,
+ python3,
+ ypcs-common (= ${binary:Version})
+Description: Tools for development
+ WIP
+
+Package: ypcs-dev
+Architecture: any
+Depends: ${misc:Depends},
+ devscripts,
+ dh-make,
+ packaging-dev
+Description: Software for building new packages
+ WIP
+
+Package: ypcs-dev-extras
+Architecture: any
+Depends: ${misc:Depends},
+ apt-cacher-ng,
+ reprepro,
+ ypcs-dev (= ${binary:Version}),
+ ypcs-common (= ${binary:Version})
+Description: Software for building new packages
+ WIP

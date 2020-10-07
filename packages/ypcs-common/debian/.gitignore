@@ -1,0 +1,6 @@
+*/DEBIAN/*
+ypcs-*/*
+*.substvars
+.debhelper
+files
+debhelper-build-stamp
